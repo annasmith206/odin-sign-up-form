@@ -4,6 +4,7 @@
     --neutral-color-light: rgb(227, 233, 226);
     --neutral-color-dark:  rgb(50, 54, 52);
     --accent-color-bright: rgb(0 142 102);
+    --accent-color-bright-hover: rgb(0, 125, 90);
     --accent-color-dark:  rgb(29, 49, 56);
 }
 
@@ -36,6 +37,10 @@ h3 {
     color: var(--neutral-color-dark);
 }
 
+h3, button, p {
+    margin-left: 15px;
+}
+
 label {
     font-family: "Quicksand", sans-serif;
     font-weight: medium;
@@ -54,7 +59,6 @@ input {
 }
 
 button {
-    margin: 25px 0 0 15px;
     padding: 8px 30px;
     border: none;
     font-size: 1.2rem;
@@ -62,6 +66,15 @@ button {
     color: var(--neutral-color-light);
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+button:hover {
+    background-color: var(--accent-color-bright-hover);
+}
+
+button:active {
+    background-color: var(--accent-color-bright-hover);
+    box-shadow: none;
 }
 
 aside {
@@ -126,4 +139,5 @@ section {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 25px;
 }
