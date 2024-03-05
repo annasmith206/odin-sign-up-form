@@ -6,6 +6,7 @@
     --accent-color-bright: rgb(0 142 102);
     --accent-color-bright-hover: rgb(0, 125, 90);
     --accent-color-dark:  rgb(29, 49, 56);
+    --error-color: rgb(179, 0, 0);
 }
 
 * {
@@ -56,6 +57,10 @@ input {
     color: var(--main-color-dark);
     padding: 5px;
     border-radius: 3px;
+}
+
+input[type="email"]:invalid {
+    border-color: red;
 }
 
 button {
@@ -134,7 +139,8 @@ a {
     color: var(--accent-color-bright);
 }
 
-section {
+fieldset {
+    border: none;
     background-color: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;

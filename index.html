@@ -22,28 +22,28 @@
             <br>
             You <em>know</em> you want to.
         </h3>
-      <section>
+      <fieldset>
         <h2>Let's do this!</h2>
         <ul class="form-container">
           <li>
             <label for="firstName">FIRST NAME</label>
-            <input type="text" name="firstName" id="firstName" />
+            <input type="text" name="firstName" id="firstName" placeholder="John"/>
           </li>
           <li>
             <label for="lastName">LAST NAME</label>
-            <input type="text" name="lastName" id="lastName" />
+            <input type="text" name="lastName" id="lastName" placeholder="Smith"/>
           </li>
           <li>
             <label for="email">EMAIL</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"/>
           </li>
           <li>
             <label for="phone">PHONE NUMBER</label>
-            <input type="tel" name="phone" id="phone" />
+            <input type="tel" name="phone" id="phone" placeholder="888 888 8888"/>
           </li>
           <li>
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" required/>
           </li>
           <li>
             <label for="confirmPassword">CONFIRM PASSWORD</label>
@@ -51,10 +51,11 @@
               type="password"
               name="confirmPassword"
               id="confirmPassword"
+              required
             />
           </li>
         </ul>
-      </section>
+    </fieldset>
       <button type="submit">Create Account</button>
       <p>Already have an account? <a href="">Login</a> </p>
     </form>
